@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+
+:root {
+  --cor-de-fundo: #000000bd;
+  --verde: #6d6d6d;
+  --branco: #ffee00;
+  --botao-ativo: #707070;
+  --botao-inativo: rgba(0, 0, 0, 0.849);
+  --texto-fundo: rgb(21, 0, 255);
+}
+
+body {
+  background-color: var(--cor-de-fundo);
+  color: var(--branco);
+  font-family: 'Nabla', system-ui;
+}
+.conteudo-principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.titulo-principal {
+    text-align: left;
+    width: 100%;
+    font-size: 32px;
+}
+
+.titulo-principal span {
+    color: var(--verde);
+}
+.botao{
+    font-family:  'Nabla', system-ui;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+}
+.botao {
+    font-family:  'Nabla', system-ui;
+    background-color: var(--botao-inativo);
+    color: var(--branco);
+    display: flex;
+    justify-content: center;
+    padding: 1em;
+    font-size: 18px;
+    align-items: center;
+    width: 100%;
+    border-bottom: 4px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: 3px solid var(--botao-ativo);;
+}
+.botoes {
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .botoes {
+        display: flex;
+    }
+}
+.botao:first-child {
+    border-radius: 40px 40px 0 0;
+}
+@media screen and (min-width: 768px) {
+    .botoes {
+        display: flex;
+    }
+
+    .botao:first-child {
+        border-radius: 40px 0 0 0;
+    }
+
+    .botao:last-child {
+        border-radius: 0 40px 0 0;
+    }
+}
